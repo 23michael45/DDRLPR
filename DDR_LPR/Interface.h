@@ -24,8 +24,8 @@ namespace DDRLPR
 		std::vector<std::string> Recognize(std::string filename);
 
 	private:
-		DDRLPR::PlateDetection m_PlateDetection;
-		DDRLPR::SegmentationFreeRecognizer m_Recognizr;
+		std::shared_ptr<DDRLPR::PlateDetection> m_spPlateDetection;
+		std::shared_ptr <DDRLPR::SegmentationFreeRecognizer> m_spRecognizr;
 	};
 
 }

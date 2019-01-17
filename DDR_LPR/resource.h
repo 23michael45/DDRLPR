@@ -3,8 +3,12 @@
 // Used by DDR_LPR.rc
 //
 #define IDR_MODELS1                     101
+#define IDR_CASCADE                     101
 #define IDR_MODELS2                     102
+#define IDR_INCEPTION_MODEL             102
 #define IDR_MODELS3                     103
+#define IDR_INCEPTION_MODELL            103
+#define IDR_INCEPTION_PROTO             103
 
 // Next default values for new objects
 // 
