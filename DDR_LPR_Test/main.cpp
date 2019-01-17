@@ -9,6 +9,12 @@ int main(int argc, char **argv)
 	files.push_back("res/3.jpg");
 	files.push_back("res/4.jpg");
 	files.push_back("res/5.jpg");
+	files.push_back("res/6.bmp");
+	files.push_back("res/7.jpg");
+	files.push_back("res/8.jpg");
+	files.push_back("res/9.jpg");
+	files.push_back("res/10.jpg");
+	files.push_back("res/11.jpg");
 
 
 
@@ -20,7 +26,7 @@ int main(int argc, char **argv)
 
 		for (auto num : nums)
 		{
-			printf("\n%s", num.c_str());
+			printf("\nfile : %s  num: %s", file.c_str() ,num.c_str());
 		}
 
 	}
