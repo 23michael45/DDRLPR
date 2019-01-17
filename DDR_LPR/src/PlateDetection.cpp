@@ -5,7 +5,16 @@ namespace DDRLPR{
         cascade.load(filename_cascade);
 
     };
-    void PlateDetection::plateDetectionRough(cv::Mat InputImage,std::vector<DDRLPR::PlateInfo>  &plateInfos,int min_w,int max_w){
+
+	PlateDetection::PlateDetection(const char *buffer, size_t len)
+	{
+		std::string data;
+		data.assign(buffer, len);
+		cv::FileStorage fs(data, cv::FileStorage::READ | cv::FileStorage::MEMORY);
+		cascade.read(fs.getFirstTopLevelNode());
+	}
+
+	void PlateDetection::plateDetectionRough(cv::Mat InputImage, std::vector<DDRLPR::PlateInfo>  &plateInfos, int min_w, int max_w) {
         cv::Mat processImage;
         cv::cvtColor(InputImage,processImage,cv::COLOR_BGR2GRAY);
         std::vector<cv::Rect> platesRegions;
