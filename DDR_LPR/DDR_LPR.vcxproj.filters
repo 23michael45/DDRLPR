@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{ea13ffdf-382a-40bb-975b-8b7acd2f2d7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{f974e215-716d-4922-b500-1b9953fa07a9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="src\CNNRecognizer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FastDeskew.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FineMapping.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Pipeline.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PlateDetection.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PlateSegmentation.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Recognizer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SegmentationFreeRecognizer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface.cpp" />
+    <ClCompile Include="src\util.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Interface.h" />
+    <ClInclude Include="include\CNNRecognizer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FastDeskew.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FineMapping.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\niBlackThreshold.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Pipeline.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PlateDetection.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PlateInfo.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PlateSegmentation.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Recognizer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SegmentationFreeRecognizer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DDRLPR.def" />
+    <None Include="model\SegmenationFree-Inception.caffemodel" />
+    <None Include="model\SegmenationFree-Inception.prototxt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DDR_LPR.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="model\cascade.xml" />
+  </ItemGroup>
+</Project>
