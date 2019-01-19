@@ -1,7 +1,14 @@
 #include "Interface.h"
+#include "PyInterface.h"
 
 int main(int argc, char **argv)
 {
+
+	//std::string fn = "res/1.jpg";
+	//auto ret = Recognize(fn);
+	//printf("\nfile : %s  num: %s", fn.c_str(), ret.c_str());
+	
+
 
 	std::vector<std::string> files;
 	files.push_back("res/1.jpg");

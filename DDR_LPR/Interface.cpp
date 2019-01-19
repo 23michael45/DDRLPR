@@ -6,12 +6,25 @@
 namespace DDRLPR
 {
 
+
 	LPRInterface::LPRInterface()
 	{
 		//m_spPlateDetection = std::make_shared<DDRLPR::PlateDetection>("model/cascade.xml");
 		//m_spRecognizr = std::make_shared<DDRLPR::SegmentationFreeRecognizer>("model/SegmenationFree-Inception.prototxt", "model/SegmenationFree-Inception.caffemodel");
 
-		ModelLoader cascade(IDR_CASCADE);
+		std::wstring moduleName = (L"DDR_LPR.dll");
+		InitModel(moduleName);
+		
+	}
+	
+	LPRInterface::LPRInterface(std::wstring moduleName)
+	{
+		InitModel(moduleName);
+	}
+
+	void LPRInterface::InitModel(std::wstring moduleName)
+	{
+		ModelLoader cascade(moduleName, IDR_CASCADE);
 
 		const char* cascade_buf = (const char*)cascade.GetAddr();
 		size_t cascade_len = cascade.GetSize();
@@ -19,17 +32,17 @@ namespace DDRLPR
 
 
 
-		ModelLoader proto(IDR_INCEPTION_PROTO);
+		ModelLoader proto(moduleName, IDR_INCEPTION_PROTO);
 		const char* proto_buf = (const char*)proto.GetAddr();
 		size_t proto_len = proto.GetSize();
 
-		ModelLoader model(IDR_INCEPTION_MODEL);
+		ModelLoader model(moduleName, IDR_INCEPTION_MODEL);
 		const char* inception_buf = (const char*)model.GetAddr();
 		size_t inception_len = model.GetSize();
 		m_spRecognizr = std::make_shared<DDRLPR::SegmentationFreeRecognizer>(proto_buf, proto_len, inception_buf, inception_len);
 
 	}
-	
+
 	LPRInterface::~LPRInterface()
 	{
 	}

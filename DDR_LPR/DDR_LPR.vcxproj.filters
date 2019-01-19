@@ -45,6 +45,7 @@
     <ClCompile Include="src\ModelLoader.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="PyInterface.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Interface.h" />
@@ -86,6 +87,7 @@
     <ClInclude Include="include\ModelLoader.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="PyInterface.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DDRLPR.def" />
