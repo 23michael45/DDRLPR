@@ -7,30 +7,44 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DDR_LPR", "DDR_LPR\DDR_LPR.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DDR_LPR_Test", "DDR_LPR_Test\DDR_LPR_Test.vcxproj", "{404630E9-6759-4477-A90D-FC39D59444D9}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DDR_LPR_Train", "DDR_LPR_Train\DDR_LPR_Train.pyproj", "{0AC41B51-E844-4063-99B6-E41E90466E2E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83B691AB-0750-4CB9-B066-37F3662ABB8D}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{83B691AB-0750-4CB9-B066-37F3662ABB8D}.Debug|x64.ActiveCfg = Debug|x64
 		{83B691AB-0750-4CB9-B066-37F3662ABB8D}.Debug|x64.Build.0 = Debug|x64
 		{83B691AB-0750-4CB9-B066-37F3662ABB8D}.Debug|x86.ActiveCfg = Debug|Win32
 		{83B691AB-0750-4CB9-B066-37F3662ABB8D}.Debug|x86.Build.0 = Debug|Win32
+		{83B691AB-0750-4CB9-B066-37F3662ABB8D}.Release|Any CPU.ActiveCfg = Release|Win32
 		{83B691AB-0750-4CB9-B066-37F3662ABB8D}.Release|x64.ActiveCfg = Release|x64
 		{83B691AB-0750-4CB9-B066-37F3662ABB8D}.Release|x64.Build.0 = Release|x64
 		{83B691AB-0750-4CB9-B066-37F3662ABB8D}.Release|x86.ActiveCfg = Release|Win32
 		{83B691AB-0750-4CB9-B066-37F3662ABB8D}.Release|x86.Build.0 = Release|Win32
+		{404630E9-6759-4477-A90D-FC39D59444D9}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{404630E9-6759-4477-A90D-FC39D59444D9}.Debug|x64.ActiveCfg = Debug|x64
 		{404630E9-6759-4477-A90D-FC39D59444D9}.Debug|x64.Build.0 = Debug|x64
 		{404630E9-6759-4477-A90D-FC39D59444D9}.Debug|x86.ActiveCfg = Debug|Win32
 		{404630E9-6759-4477-A90D-FC39D59444D9}.Debug|x86.Build.0 = Debug|Win32
+		{404630E9-6759-4477-A90D-FC39D59444D9}.Release|Any CPU.ActiveCfg = Release|Win32
 		{404630E9-6759-4477-A90D-FC39D59444D9}.Release|x64.ActiveCfg = Release|x64
 		{404630E9-6759-4477-A90D-FC39D59444D9}.Release|x64.Build.0 = Release|x64
 		{404630E9-6759-4477-A90D-FC39D59444D9}.Release|x86.ActiveCfg = Release|Win32
 		{404630E9-6759-4477-A90D-FC39D59444D9}.Release|x86.Build.0 = Release|Win32
+		{0AC41B51-E844-4063-99B6-E41E90466E2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AC41B51-E844-4063-99B6-E41E90466E2E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0AC41B51-E844-4063-99B6-E41E90466E2E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0AC41B51-E844-4063-99B6-E41E90466E2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AC41B51-E844-4063-99B6-E41E90466E2E}.Release|x64.ActiveCfg = Release|Any CPU
+		{0AC41B51-E844-4063-99B6-E41E90466E2E}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

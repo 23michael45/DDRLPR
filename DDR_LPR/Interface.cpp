@@ -62,6 +62,10 @@ namespace DDRLPR
 
 
 			cv::Mat imagerec = platex.getPlateImage();
+
+			//cv::imshow(filename, imagerec);
+			//cv::waitKey(0);
+
 			std::pair<std::string, float> res = m_spRecognizr->SegmentationFreeForSinglePlate(imagerec, DDRLPR::CH_PLATE_CODE);
 			platenums.push_back(res.first);
 		}

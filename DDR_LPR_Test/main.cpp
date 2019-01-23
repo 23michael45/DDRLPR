@@ -22,6 +22,11 @@ int main(int argc, char **argv)
 	files.push_back("res/9.jpg");
 	files.push_back("res/10.jpg");
 	files.push_back("res/11.jpg");
+	files.push_back("res/12.jpg");
+	files.push_back("res/13.jpg");
+	files.push_back("res/14.jpg");
+
+
 
 
 

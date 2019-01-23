@@ -9,7 +9,7 @@ namespace DDRLPR{
     public:
 		PlateDetection(std::string filename_cascade);
 		PlateDetection(const char *buffer, size_t len);
-        void plateDetectionRough(cv::Mat InputImage,std::vector<DDRLPR::PlateInfo>  &plateInfos,int min_w=36,int max_w=800);
+        void plateDetectionRough(cv::Mat InputImage,std::vector<DDRLPR::PlateInfo>  &plateInfos,int min_w=36,int max_w=36*40);
 //        std::vector<DDRLPR::PlateInfo> plateDetectionRough(cv::Mat InputImage,int min_w= 60,int max_h = 400);
 
 
