@@ -83,7 +83,6 @@
       <Filter>include</Filter>
     </ClInclude>
     <ClInclude Include="resource.h" />
-    <ClInclude Include="resource1.h" />
     <ClInclude Include="include\ModelLoader.h">
       <Filter>include</Filter>
     </ClInclude>

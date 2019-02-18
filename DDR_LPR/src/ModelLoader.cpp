@@ -1,7 +1,7 @@
 #include "ModelLoader.h"
-ModelLoader::ModelLoader(std::wstring modulename, int resource_id)
+ModelLoader::ModelLoader(std::string modulename, int resource_id)
 {
-	const std::wstring resource_class = L"MODELS";
+	const std::string resource_class = "MODELS";
 
 	hModule = GetModuleHandle(modulename.c_str()); // get the handle to the current module (the executable file)
 	hResource = FindResource(hModule, MAKEINTRESOURCE(resource_id), resource_class.c_str()); // substitute RESOURCE_ID and RESOURCE_TYPE.

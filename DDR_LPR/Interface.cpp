@@ -3,6 +3,7 @@
 #include "util.h"
 #include "ModelLoader.h"
 #include "resource.h"
+//#include "inference_engine.hpp"
 namespace DDRLPR
 {
 
@@ -12,17 +13,20 @@ namespace DDRLPR
 		//m_spPlateDetection = std::make_shared<DDRLPR::PlateDetection>("model/cascade.xml");
 		//m_spRecognizr = std::make_shared<DDRLPR::SegmentationFreeRecognizer>("model/SegmenationFree-Inception.prototxt", "model/SegmenationFree-Inception.caffemodel");
 
-		std::wstring moduleName = (L"DDR_LPR.dll");
+		std::string moduleName = ("DDR_LPR.dll");
 		InitModel(moduleName);
 		
+
+
+		//InferenceEngine::CNNNetReader networkReader;
 	}
 	
-	LPRInterface::LPRInterface(std::wstring moduleName)
+	LPRInterface::LPRInterface(std::string moduleName)
 	{
 		InitModel(moduleName);
 	}
 
-	void LPRInterface::InitModel(std::wstring moduleName)
+	void LPRInterface::InitModel(std::string moduleName)
 	{
 		ModelLoader cascade(moduleName, IDR_CASCADE);
 

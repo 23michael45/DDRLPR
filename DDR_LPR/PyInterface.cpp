@@ -31,7 +31,7 @@ std::string string_To_UTF8(const std::string & str)
 
 void Init()
 {
-	std::wstring moduleName = (L"ddrlpr.pyd");
+	std::string moduleName = ("ddrlpr.pyd");
 	ModelLoader cascade(moduleName,IDR_CASCADE);
 
 	const char* cascade_buf = (const char*)cascade.GetAddr();
@@ -65,7 +65,7 @@ cv::Mat GetImage(std::string fn)
 
 py::str Recognize(std::string filename)
 {
-	std::wstring moduleName = (L"ddrlpr.pyd");
+	std::string moduleName = ("ddrlpr.pyd");
 	DDRLPR::LPRInterface lpinterface(moduleName);
 	auto vec = lpinterface.Recognize(filename);
 

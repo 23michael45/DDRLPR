@@ -5,7 +5,7 @@
 class ModelLoader {
 
 public:
-	ModelLoader(std::wstring modulename,int resource_id);
+	ModelLoader(std::string modulename,int resource_id);
 	~ModelLoader();
 
 	size_t GetSize();

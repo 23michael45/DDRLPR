@@ -19,10 +19,10 @@ namespace DDRLPR
 	{
 	public:
 		LPRInterface();
-		LPRInterface(std::wstring moduleName);
+		LPRInterface(std::string moduleName);
 		~ LPRInterface();
 
-		void InitModel(std::wstring moduleName);
+		void InitModel(std::string moduleName);
 
 		std::vector<std::string> Recognize(std::string filename);
 
